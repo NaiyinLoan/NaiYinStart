@@ -18,7 +18,7 @@
     <!--druid数据源(推荐)-->
     <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/loansystem?useUnicode=true&amp;characterEncoding=utf8"/>
+        <property name="url" value="jdbc:mysql://192.168.1.4:3306/loansystem?useUnicode=true&amp;characterEncoding=utf8"/>
         <property name="username" value="root"/>
         <property name="password" value="123456"/>
 
@@ -40,6 +40,24 @@
         <property name="mapperLocations" value="classpath:com/naiyin/loan/dao/imp/*.xml"/>
         <!-- 配置alias的路径 -->
         <property name="typeAliasesPackage" value="com/naiyin/loan/entity"/>
+
+        <!--pageHelper-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <!--使用下面的方式配置参数，一行配置一个 -->
+                        <value>
+                            helperDialect=postgresql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
     </bean>
 
     <!-- mapper扫描配置，这个相比ibatis来说，就是很大的改进了，可以省去很多的代码，直接通过代理动态的调用 -->

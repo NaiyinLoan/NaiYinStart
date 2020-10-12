@@ -17,9 +17,56 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <pagehelper-version>5.0.0</pagehelper-version>
+    <jsqlparser-version>0.9.5</jsqlparser-version>
   </properties>
 
   <dependencies>
+    <!--pagehelper-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>${pagehelper-version}</version>
+    </dependency>
+
+    <!-- pagehelper的依赖包:jsqlparser -->
+    <dependency>
+      <groupId>com.github.jsqlparser</groupId>
+      <artifactId>jsqlparser</artifactId>
+      <version>${jsqlparser-version}</version>
+    </dependency>
+
+    <!-- 引入thymeleaf -->
+    <dependency>
+      <groupId>org.thymeleaf</groupId>
+      <artifactId>thymeleaf</artifactId>
+      <version>3.0.0.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.thymeleaf</groupId>
+      <artifactId>thymeleaf-spring4</artifactId>
+      <version>3.0.0.RELEASE</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>javassist</artifactId>
+          <groupId>org.javassist</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.thymeleaf.extras</groupId>
+      <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+      <version>3.0.0.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.thymeleaf.extras</groupId>
+      <artifactId>thymeleaf-extras-java8time</artifactId>
+      <version>3.0.0.RELEASE</version>
+    </dependency>
+
     <!--    加入spring容器的测试-->
     <dependency>
       <groupId>junit</groupId>
