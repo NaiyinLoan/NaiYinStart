@@ -21,7 +21,7 @@
         <!--消息转换器,可以处理@ResponseBody中的乱码(返回中文字符串时出现乱码情况)-->
         <mvc:message-converters>
             <bean class="org.springframework.http.converter.StringHttpMessageConverter">
-                <property name="supportedMediaTypes" value="application/json;charset=utf-8"/>
+                <property name="supportedMediaTypes" value="text/html;charset=utf-8"/>
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
