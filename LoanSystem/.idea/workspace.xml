@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c93312-a944-41fa-ac8f-9c3e3b5e257a" name="Default Changelist" comment="初始项目004">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/TestSpring.java" afterDir="false" />
-    </list>
+    <list default="true" id="87c93312-a944-41fa-ac8f-9c3e3b5e257a" name="Default Changelist" comment="初始项目004" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +185,7 @@
       <workItem from="1602478898767" duration="8504000" />
       <workItem from="1602560444197" duration="1912000" />
       <workItem from="1602568057362" duration="1833000" />
-      <workItem from="1602644030949" duration="1032000" />
+      <workItem from="1602644030949" duration="1829000" />
     </task>
     <task id="LOCAL-00001" summary="初始项目004">
       <created>1602498090858</created>
