@@ -9,7 +9,5 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class TestSpring {
 
     public void test1() throws Exception {
-        String s = "123123";
-        int aa=10;
     }
 }
